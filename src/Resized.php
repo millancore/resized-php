@@ -146,6 +146,15 @@ class Resized
         return implode('/', $fullUrl);
     }
 
+    /**
+     * @param $url
+     * @return ProcessBuilder
+     */
+    public function builder($url) : ProcessBuilder
+    {
+        return ProcessBuilder::new($this)->process($url);
+    }
+
 
     /**
      * Get seo slug and file extension
