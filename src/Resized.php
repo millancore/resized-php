@@ -148,11 +148,11 @@ class Resized
 
     /**
      * @param $url
-     * @return ProcessBuilder
+     * @return Builder
      */
-    public function builder($url) : ProcessBuilder
+    public function src($url) : Builder
     {
-        return ProcessBuilder::new($this)->process($url);
+        return new Builder($this, $url);
     }
 
 

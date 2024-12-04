@@ -156,7 +156,7 @@ class ResizedTest extends TestCase
         $resized = new Resized('key', 'secret-d0be2dc421be4fcd0172e5afceea3970e2f3d940');
 
         $resized->setDefaultImage('http://www.example.com/no-image.jpg');
-        $img = $resized->builder('http://www.example.com/some-image-to-resize.jpg')
+        $img = $resized->src('http://www.example.com/some-image-to-resize.jpg')
             ->width(100)
             ->height(100)
             ->output('webp')
